@@ -315,6 +315,11 @@ body {
     top: 8px;
 }
 
+.products__cart-button:hover,
+.products__cart-button:focus {
+    color: #F16D7F;
+}
+
 .products__cart-button:active {
     color: #E05C6E;
 }
@@ -448,7 +453,7 @@ body {
 
 [type="email"]:hover,
 [type="email"]:focus {
-    border: 1px solid #F16D7F;
+    outline: 2px solid #F16D7F;
 }
 
 
