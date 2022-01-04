@@ -1,0 +1,137 @@
+.header {
+    background-color: #222222;
+    min-height: 50px;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+}
+
+.header__search {
+    margin-left: 40px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.header__search-input {
+    padding: 7px 25px;
+    border: none;
+    outline: 1px solid black;
+}
+
+.header__search-input:hover,
+.header__search-input:focus{
+    outline: 1px solid #F16D7F;
+}
+
+.header__search-form {
+    position: relative;
+}
+
+.header__search-form::before {
+    position: absolute;
+    background-image: url(../img/loupe.svg);
+    width: 17px;
+    height: 17px;
+    content: '';
+    left: 20px;
+    top: 10px;
+    background-size: 17px 17px;
+    color: black;
+}
+
+.header__search-input {
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.header__search-icon {
+    margin-top: 5px;
+}
+
+.header__menu-icon,
+.header__link-profile,
+.header__link-basket {
+    fill: #FFFFFF;
+}
+
+.header__menu-icon:hover,
+.header__menu-icon:focus,
+.header__link-profile:hover,
+.header__link-profile:focus,
+.header__link-basket:hover,
+.header__link-basket:focus {
+    fill: #F16D7F;
+}
+
+.header__menu-icon:active,
+.header__link-profile:active,
+.header__link-basket:active {
+    fill: #E05C6E;
+}
+
+.header__link {
+    margin-left: 33px;
+    text-decoration: none;
+}
+
+.header__menu-btn {
+    border: none;
+    background-color: transparent; 
+    position: relative;
+    cursor: pointer;
+}
+
+.header__menu-btn:hover + .header__nav,
+.header__menu-btn:focus + .header__nav,
+.header__menu-btn:active + .header__nav {
+    display: block;
+}
+
+.header__nav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    height: 765px;
+    width: 232px;
+    right: 0;
+}
+
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #000;
+    padding-left: 34px;
+    margin-top: 37px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.header__nav-exit {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-color: white;
+    border: none;
+    fill: #6F6E6E;
+    cursor: pointer;
+}
+
+.header__nav-exit + .header__nav {
+    display: none;
+}
