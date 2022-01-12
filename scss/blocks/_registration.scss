@@ -1,0 +1,147 @@
+.registration__title {
+    background-color: #F8F3F4;
+    height: 148px;
+}
+
+.registration__title-text {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #F16D7F;
+    margin-left: 230px;
+    padding-top: 60px;
+}
+
+.registration {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 113px;
+}
+
+.registration__form {
+    width: 360px;
+    padding-right: 128px;
+}
+
+.registration__name, 
+.registration__login {
+    display: block;
+}
+
+.registration__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: #222222;
+}
+
+.registration__name-input,
+.registration__login-input {
+    width: 345px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #A4A4A4;
+}
+
+.registration__name-input::placeholder,
+.registration__login-input::placeholder {
+    color: #B1B1B1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.registration__name-input:hover,
+.registration__login-input:hover,
+.registration__name-input:focus,
+.registration__login-input:focus {
+    border: 1px solid #F16D7F;
+}
+
+.registration__name-input:active,
+.registration__login-input:active {
+    border: 1px solid #E05C6E;
+    outline: none;
+}
+
+.registration__sex {
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+
+.registration__sex-label {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    color: #000;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.registration__login-text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 15px;
+}
+
+.registration__login-btn {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    height: 50px;
+    background-color: #F16D7F;
+    width: 50%;
+    justify-content: space-around;
+    color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 39px;
+    cursor: pointer;
+}
+
+.registration__login-img {
+    fill: #FFFFFF;
+}
+
+.registration__perks {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #000;
+}
+
+.registration__perks-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+.registration__perks-subtitle {
+    margin-bottom: 22px;
+}
+
+.registration__perks-item {
+    margin-bottom: 16px;
+}
+
+.registration__perks-text {
+    position: relative;
+    margin-left: 43px;
+}
+
+.registration__perks-text::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/tick.svg);
+    width: 20px;
+    height: 16px;
+    left: -43px;
+    top: 8px;
+}
