@@ -1,5 +1,5 @@
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
@@ -21,4 +21,16 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
+}
+
+@media (max-width: $tablet-width) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .container {
+        width: 92%;
+    }
 }

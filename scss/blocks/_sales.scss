@@ -9,13 +9,24 @@
 }
 
 .sales__item {
-    width: 360px;
+    width: 31%;
     min-height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #000;
     flex-direction: column;
+    background-size: cover;
+
+    @include tablet {
+        min-height: 161px;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 249px;
+        margin-bottom: 30px;
+    }
 }
 
 .sales__item-woman {
@@ -33,22 +44,30 @@
 .sales__item-accessories {
     background-image: url(../img/accessories-sales.jpg);
     width: 100%;
+    min-height: 180px;
     margin-top: 30px;
     margin-bottom: 96px;
+
+    @include tablet {
+        min-height: 116px;
+        margin-bottom: 155px;
+        margin-top: 20px;
+    }
+
+    @include mobile {
+        min-height: 111px;
+        margin-bottom: 64px;
+        margin-top: 0;
+    }
 }
 
 .sales__item-text {
-    font-weight: 400;
+    @include font (16px, 19px, 400);
     color: #EAE9E9;
 }
 
 .sales__item-title {
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
+    @include font (24px, 29px, 700);
     text-align: center;
     color: #F16D7F;
 }
