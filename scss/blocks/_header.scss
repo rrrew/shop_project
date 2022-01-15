@@ -1,6 +1,7 @@
 .header {
     background-color: #222222;
     min-height: 50px;
+    display: flex;
 }
 
 .header__wrp {
@@ -19,40 +20,39 @@
     display: flex;
 }
 
+.header__search-form {
+    display: flex;
+}
+
+.header__search-icon {
+    fill: #E8E8E8;
+}
+
+.header__search-button {
+    background-color: transparent;
+    border: none;
+}
+
+.header__search-button:hover .header__search-input {
+    display: block;
+}
+
+.header__search-icon:hover,
+.header__search-icon:focus {
+    fill: #F16D7F;
+}
+
 .header__search-input {
+    margin-left: 15px;
     padding: 7px 25px;
     border: none;
     outline: 1px solid black;
+    display: none;
 }
 
 .header__search-input:hover,
 .header__search-input:focus{
     outline: 1px solid #F16D7F;
-}
-
-.header__search-form {
-    position: relative;
-}
-
-.header__search-form::before {
-    position: absolute;
-    background-image: url(../img/loupe.svg);
-    width: 17px;
-    height: 17px;
-    content: '';
-    left: 20px;
-    top: 10px;
-    background-size: 17px 17px;
-    color: black;
-}
-
-.header__search-input {
-    margin-left: 15px;
-    margin-top: 4px;
-}
-
-.header__search-icon {
-    margin-top: 5px;
 }
 
 .header__menu-icon,
@@ -134,4 +134,24 @@
 
 .header__nav-exit + .header__nav {
     display: none;
+}
+
+@media (max-width: $tablet-width) {
+    .header__logo-form-wrp {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header__logo-form-wrp {
+        margin: 0;
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__wrp {
+        justify-content: space-between;
+    }
 }

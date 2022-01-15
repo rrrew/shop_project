@@ -1,6 +1,14 @@
 .advantages {
     background-color: #222224;
     margin-top: 95px;
+
+    @include tablet {
+        margin-top: 65px;
+    }
+
+    @include mobile {
+        margin-top: 96px;
+    }
 }
 
 .advantages__list {
@@ -8,10 +16,24 @@
     padding: 104px 0;
     text-align: center;
     justify-content: space-between;
+
+    @include tablet {
+        align-items: center;
+        flex-direction: column;
+        padding: 48px 0 16px;
+    }
+    
+    @include mobile {
+        padding-bottom: 33px;
+    }
 }
 
 .advantages__item {
     width: 360px;
+
+    @include tablet {
+        padding-bottom: 48px;
+    }
 }
 
 .advantages__item-img {

@@ -1,6 +1,14 @@
 .brand {
     display: flex;
     margin-bottom: 63px;
+
+    @include tablet {
+        margin-bottom: 20px;
+    }
+
+    @include mobile {
+        margin-bottom: 64px;
+    }
 }
 
 .brand__title-wrp {
@@ -9,18 +17,43 @@
     display: flex;
     align-items: center;
     padding-left: 92px;
+
+    @include tablet {
+        padding-left: 62px;
+    }
+
+    @include mobile {
+        min-height: 363px;
+        justify-content: center;
+    }
 }
 
 .brand__img {
+    object-fit: contain;
     background-color: #F1E4E6;
+    
+    @include tablet {
+        height: 367px;
+        width: 50%;
+    }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .brand__title {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
+    @include font(48px, 58px, 900);
     text-transform: uppercase;
     position: relative;
+
+    @include tablet {
+        @include font (44px, 52px, 900);
+    }
+
+    @include mobile {
+        @include font (38px, 45px, 900);
+    }
 }
 
 .brand__title::before {
@@ -33,11 +66,16 @@
 }
 
 .brand__subtitle {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
+    @include font(32px, 38px, 700);
     display: block;
+
+    @include tablet {
+        @include font (24px, 28px, 700);
+    }
+
+    @include mobile {
+        @include font (20px, 24px, 700);
+    }
 }
 
 .brand__subtitle-pink {
