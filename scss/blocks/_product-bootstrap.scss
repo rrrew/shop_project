@@ -181,6 +181,7 @@
     background-color: #FFFFFF;
     margin-bottom: 65px;
     position: relative;
+    text-decoration: none;
 }
 
 .product__cart-button::before {
@@ -197,6 +198,21 @@
 .product__cart-button-text {
     color: #F26376;
     @include font (16px, 19px, 400);
+}
+
+.product__cart-button:hover,
+.product__cart-button:focus {
+    background-color: #FF6A6A;
+    background-image: url(../../img/cart.svg);
+}
+
+.product__cart-button:hover .product__cart-button-text,
+.product__cart-button:focus .product__cart-button-text {
+    color: #FFFFFF;
+}
+
+.product__cart-button:active {
+    background-color: #F03535;
 }
 
 .product__catalog {
@@ -293,6 +309,7 @@
     color: white;
     background-color: transparent;
     border: 1px solid white;
+    text-decoration: none;
 }
 
 .product__catalog-cart-button::before {
