@@ -17,6 +17,7 @@
     border: 1px solid #000;
     flex-direction: column;
     background-size: cover;
+    background-color: #645C5C;
 
     @include tablet {
         min-height: 161px;

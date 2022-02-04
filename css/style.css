@@ -323,7 +323,8 @@ body {
   justify-content: center;
   border: 1px solid #000;
   flex-direction: column;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #645C5C; }
   @media (max-width: 1439px) {
     .sales__item {
       min-height: 161px; } }
