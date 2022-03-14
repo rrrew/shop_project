@@ -158,3 +158,51 @@
         justify-content: space-between;
     }
 }
+
+.header__menu-wrp {
+    position: relative;
+}
+
+.header__basket {
+    position: absolute;
+    background-color: #FFFFFF;
+    font-weight: 300;
+    font-size: 12px;
+    width: 500px;
+    right: 0px;
+    top: 40px;
+}
+
+.header__basket-title {
+    display: flex;
+}
+
+.header__basket-item {
+    flex-grow: 1;
+    width: 25%;
+}
+
+.basketRow {
+    display: flex;
+}
+
+.basketRow__item {
+    width: 25%;
+}
+
+.header__basket-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+}
+
+.header__link-basket-value {
+    background-color:#F16D7F;
+    position: absolute;
+    color: white;
+    @include font (12px, 14px, 400);
+    padding: 1px 5px;
+    border-radius: 10px;
+    bottom: 25px;
+    left: 165px;
+}
