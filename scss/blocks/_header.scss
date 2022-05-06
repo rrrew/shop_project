@@ -82,6 +82,8 @@
 .header__link {
     margin-left: 33px;
     text-decoration: none;
+    background-color: #222222;
+    border: none;
 }
 
 .header__menu-btn {
@@ -161,6 +163,7 @@
 
 .header__menu-wrp {
     position: relative;
+    display: flex;
 }
 
 .header__basket {

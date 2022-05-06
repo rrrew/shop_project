@@ -3,10 +3,11 @@ const fs = require('fs');
 
 const actions = {
     add: cart.add,
-    change: cart.change
+    change: cart.change,
+    remove: cart.remove
 };
 //HANDLER отвечает за изменение данных в самом файле
-let handler = (req, res, action, file) => {
+const handler = (req, res, action, file) => {
     fs.readFile(file, 'utf-8', (err, data)=> {
         if(err){
             res.sendStatus(404, JSON.stringify({result:0, text: err}));
